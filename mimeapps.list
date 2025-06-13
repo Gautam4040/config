@@ -1,0 +1,28 @@
+[Default Applications]
+text/html=userapp-Zen-SSW362.desktop
+x-scheme-handler/http=userapp-Zen-SSW362.desktop
+x-scheme-handler/https=userapp-Zen-SSW362.desktop
+x-scheme-handler/about=firefox_firefox.desktop
+x-scheme-handler/unknown=firefox_firefox.desktop
+x-scheme-handler/chrome=userapp-Zen-SSW362.desktop
+application/x-extension-htm=userapp-Zen-SSW362.desktop
+application/x-extension-html=userapp-Zen-SSW362.desktop
+application/x-extension-shtml=userapp-Zen-SSW362.desktop
+application/xhtml+xml=userapp-Zen-SSW362.desktop
+application/x-extension-xhtml=userapp-Zen-SSW362.desktop
+application/x-extension-xht=userapp-Zen-SSW362.desktop
+inode/directory=thunar.desktop
+application/x-wayland-gnome-saved-search=thunar.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Zen-SSW362.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-1C5612.desktop;
+x-scheme-handler/https=userapp-Zen-SSW362.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-1C5612.desktop;
+text/html=userapp-Zen-TR0Z12.desktop;userapp-Zen-1C5612.desktop;userapp-Zen-SSW362.desktop;
+x-scheme-handler/chrome=userapp-Zen-SSW362.desktop;userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;
+application/x-extension-htm=userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-SSW362.desktop;
+application/x-extension-html=userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-SSW362.desktop;
+application/x-extension-shtml=userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-SSW362.desktop;
+application/xhtml+xml=userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-SSW362.desktop;
+application/x-extension-xhtml=userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-SSW362.desktop;
+application/x-extension-xht=userapp-Zen-1C5612.desktop;userapp-Zen-TR0Z12.desktop;userapp-Zen-SSW362.desktop;
+text/csv=libreoffice-calc.desktop;

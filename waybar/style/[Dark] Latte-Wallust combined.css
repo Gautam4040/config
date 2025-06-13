@@ -1,0 +1,241 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Catppuccin Latte - Wallust */
+/* Original Design by DC user mannatsingh */
+
+@import '../../.config/waybar/wallust/colors-waybar.css';
+@import "../waybar/style/catppuccin-themes/latte.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+	min-height:35px;  
+    /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+    font-size: 103%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar {
+    background: transparent;
+    border-radius: 0px;
+    color: #cba6f7;
+}
+
+window#waybar.hidden {
+    opacity: 0;
+}
+
+
+
+
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: @border-color;
+    color: #ffffff;
+}
+
+/*-----module groups----*/
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(48, 52, 70,0.5);
+    border-radius:18px;
+    border:4px solid rgba(48, 52, 70,1);
+	  padding-top: 0px;
+	  padding-bottom: 0px;
+	  padding-right:20px;
+	  padding-left: 20px;
+}
+
+
+
+#workspaces{
+  background-color:#ffff00;
+  color:red;
+  padding: 0px 1px;
+  border-radius:15px;
+  border: 2px solid @border-color;
+  font-weight: bold;
+  font-style: normal;
+  opacity:0.8;
+
+}
+#taskbar button,   
+#workspaces button {
+    color: cyan;
+    box-shadow: none;
+	  text-shadow: none;
+    background-color: transparent;
+    border-radius: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button.active,
+#workspaces button.active {
+    color: red;    
+    border-radius: 50%;
+    background-color: transparent;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    border-radius: 10px;
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+    color:#00ffff;
+    background-color:#ffffff;
+    border-radius: 10px;
+ 	  padding-left: 2px;
+    padding-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682) 
+}
+
+
+
+
+#laptop {
+  background-color: rgba(202, 158, 230,0.5);
+  color: white;
+  border: 2px solid  rgba(202, 158, 230,1);
+  border-radius: 10px;
+  padding-left:6px;
+  padding-right:6px;
+}
+
+#laptop:hover {
+  background-color: rgba(229, 200, 144, 0.2);
+  border-color: #e5c890;
+}
+
+/* Battery status coloring */
+.battery-critical {
+  color: red;
+}
+.battery-warning {
+  color: orange;
+}
+.battery-good {
+  color:green;
+}
+
+
+
+#netty:hover{ 
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius:10px;
+  color:#a6d189;
+  padding-right:6px;
+  padding-left:6px;
+}
+
+#netty{
+  background-color:rgba(140, 170, 238,0.5);
+  color: white;
+  border: 2px solid rgba(140, 170, 238,1); 
+  border-radius: 10px;  
+}
+
+#audio:hover{
+  background-color:transparent;
+  color: rgba(231, 130, 132,1);
+}
+
+#audio{
+  background-color:  rgba(229, 200, 144,0.5);
+  color:white;
+  border: 2px solid rgba(229, 200, 144,1);
+  border-radius: 10px; 
+  padding-right:6px;
+  padding-left:6px;
+}
+#status{
+  background-color: rgba(231, 130, 132,0.5);
+  color:white;
+  border:2px solid rgba(231, 130, 132,1);
+  border-radius:10px;
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+#mobo_drawer:hover{
+  background-color:transparent;
+  color:red;
+}
+
+#mobo_drawer{
+  background-color:rgba(166, 209, 137,0.5);
+  color:white;
+  border:2px solid rgba(166, 209, 137,1);
+  border-radius:10px;
+  padding-left:6px;
+  padding-right:6px;
+}
+
+#temperature.critical {
+  background-color: #ff0000;
+}
+
+@keyframes blink {
+    to {
+        color: #000000;
+    }
+}
+
+#temperature.critical {
+    background-color: @red;
+}
+
+
+
+
+#custom-hypridle,
+#custom-lock,
+#idle_inhibitor {
+    color: @teal;
+}
+
+/*-----Indicators----*/
+#custom-hypridle.notactive,
+#idle_inhibitor.activated {
+	color: #39FF14;
+}
+
+
+#clock#2 {
+    color: #efe8f7;
+}
+
+#clock {
+	color: #8caaee;
+  border:5px solid transparent;
+  background-color:transparent;
+  border-radius:10px;
+}
+
+#clock button:hover{
+	color:white;
+  border:5px solid #8caaee;
+  background-color:rgba(140, 170, 238,0.5);color:rgba(140, 170, 238,0.5);  
+  border-radius:10px;
+}
+
+#custom-updates {
+    color: @yellow;
+}
+#swaync{
+    color: #ffd700;}

@@ -1,0 +1,22 @@
+2025-05-30 17:12:51: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-30 17:13:09: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-30 17:13:09: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"/home/gautam/.config/joplin-desktop","argv":["/tmp/.mount_JoplinbUqCZH/joplin","--no-sandbox"]},"secretKey":"E5SbDIpZYmPXqHTdIG5J9qFu2Tnv2brdBUkbwI9u1qeLtB97Z4LEx1BmmNwrpiWh"}
+2025-05-30 17:13:09: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"/home/gautam/.config/joplin-desktop","argv":["/tmp/.mount_JoplinbUqCZH/joplin","--no-sandbox"]},"secretKey":"E5SbDIpZYmPXqHTdIG5J9qFu2Tnv2brdBUkbwI9u1qeLtB97Z4LEx1BmmNwrpiWh","sourcePort":2659}
+2025-05-30 17:14:35: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-30 22:41:14: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-31 13:17:27: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-31 13:18:16: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-31 13:18:16: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"/home/gautam/.config/joplin-desktop","argv":["/tmp/.mount_JoplinPD7tGe/joplin","--no-sandbox"]},"secretKey":"E5SbDIpZYmPXqHTdIG5J9qFu2Tnv2brdBUkbwI9u1qeLtB97Z4LEx1BmmNwrpiWh"}
+2025-05-31 13:18:16: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"/home/gautam/.config/joplin-desktop","argv":["/tmp/.mount_JoplinPD7tGe/joplin","--no-sandbox"]},"secretKey":"E5SbDIpZYmPXqHTdIG5J9qFu2Tnv2brdBUkbwI9u1qeLtB97Z4LEx1BmmNwrpiWh","sourcePort":2659}
+2025-05-31 13:18:16: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at /tmp/.mount_JoplinPD7tGe/resources/app.asar/node_modules/@joplin/utils/node_modules/node-fetch/lib/index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (/tmp/.mount_JoplinPD7tGe/resources/app.asar/node_modules/@joplin/utils/dist/ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (/tmp/.mount_JoplinPD7tGe/resources/app.asar/ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (/tmp/.mount_JoplinPD7tGe/resources/app.asar/ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (/tmp/.mount_JoplinPD7tGe/resources/app.asar/ElectronAppWrapper.js:641:32)
+2025-06-01 14:30:16: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-07 13:28:50: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-13 17:31:31: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-13 17:58:18: Starting server using secret key: /home/gautam/.config/joplin-desktop/ipc_secret_key.txt

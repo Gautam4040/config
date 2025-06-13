@@ -1,0 +1,746 @@
+[global/wm]
+;https://github.com/jaagr/polybar/wiki/Configuration#global-wm-settings
+;margin-top = 10
+;margin-bottom = 20
+
+[settings]
+;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
+throttle-output = 5
+;throttle-output-for = 10
+;screenchange-reload = true
+compositing-background = over
+compositing-foreground = over
+;compositing-overline = over
+;compositing-underline = over
+compositing-border = over
+
+[colors]
+cbg_poly = #C80089
+cbg_border = #BB96FD
+color_crazy_1 =#FB8AFC 
+color_crazy_2 =#0283FA 
+color_crazy_3 =#030423 
+color_cyan=#00FFFF
+color_dark_red= #998B0000
+background = ${Dracula.background}
+foreground = ${Dracula.foreground}
+color0     = ${Dracula.color0}
+color1     = ${Dracula.color1}
+color2     = ${Dracula.color2}
+color3     = ${Dracula.color3}
+color4     = ${Dracula.color4}
+color5     = ${Dracula.color5}
+color6     = ${Dracula.color6}
+color7     = ${Dracula.color7}
+color8     = ${Dracula.color8}
+color9     = ${Dracula.color9}
+color10    = ${Dracula.color10}
+color11    = ${Dracula.color11}
+color12    = ${Dracula.color12}
+color13    = ${Dracula.color13}
+color14    = ${Dracula.color14}
+color15    = ${Dracula.color15}
+alert      = ${Dracula.color1}
+
+[Dracula]
+background = #80000000  # Transparent black (50% opacity)
+foreground = #f8f8f2  # Off-white
+
+color0     = #000000  # Black
+color1     = #ff5555  # Red
+color2     = #50fa7b  # Green (Neon Green)
+color3     = #f1fa8c  # Yellow (Pastel Yellow)
+color4     = #bd93f9  # Blue (Soft Purple-Blue)
+color5     = #ff79c6  # Magenta (Pinkish Magenta)
+color6     = #8be9fd  # Cyan (Light Cyan)
+color7     = #bfbfbf  # White (Grayish White)
+
+color8     = #4d4d4d  # Bright Black (Dark Gray)
+color9     = #ff6e67  # Bright Red (Salmon Red)
+color10    = #5af78e  # Bright Green (Lime Green)
+color11    = #f4f99d  # Bright Yellow (Lemon Yellow)
+color12    = #caa9fa  # Bright Blue (Lavender Purple)
+color13    = #ff92d0  # Bright Magenta (Bubblegum Pink)
+color14    = #9aedfe  # Bright Cyan (Sky Blue)
+color15    = #e6e6e6  # Bright White (Light Gray)
+oom_blue  = #19ADF1
+doom_pink  = #FF17C2
+doom_green = #9DD54C
+doom_red   = #FE5F4E
+################################################################################
+############                         MAINBAR-I3                     ############
+################################################################################
+
+[bar/lefty]
+
+;monitor = ${env:MONITOR}
+;monitor-fallback = HDMI1
+;monitor-strict = false
+override-redirect = true
+bottom = false
+fixed-center = true
+width = 98%
+height = 32
+offset-x = 1%
+offset-y = 1%
+;position = top
+;layer = top
+margin-top = 5
+
+background = ${colors.color_dark_red}
+foreground = #FFFFFF
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+;background-0 =
+
+radius = 5.0 
+line-size = 6
+line-color = #000000
+
+border-size = 4
+;border-left-size = 25
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = ${colors.color_cyan}
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 3
+;module-margin-right = 0
+
+font-0 = "FiraCodeNerdFont-Bold:style=Bold:size=13;2"
+font-1 = "FiraCodeNerdFont-Bold:style=Bold:size=15;3"
+font-2 = "FiraCodeNerdFont-Bold:style=Regular:pixelsize=8;1"
+font-3 = "FiraCodeNerdFont-Bold:style=Solid:pixelsize=8;1"
+font-4 = "FiraCodeNerdFont-Bold:pixelsize=8;1"
+
+modules-center =  ubuntu-button date
+modules-right = volume battery bluetooth 
+modules-left = memory2 gpu cpu2 
+;dim-value = 1.0
+
+
+#i3: Make the bar appear below windows
+wm-restack = i3
+;override-redirect = true
+
+#################################################################
+
+[bar/middley_1]
+;https://github.com/jaagr/polybar/wiki/Configuration
+
+;monitor = ${env:MONITOR}
+;monitor-fallback = HDMI1
+;monitor-strict = false
+override-redirect = true
+bottom = false
+fixed-center = true
+width = 15%
+height = 32
+offset-x = 45%
+offset-y = 1%
+;position = top
+;layer = top
+
+background = ${Dracula.background}
+foreground = ${Dracula.foreground}
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+;background-0 =
+
+radius = 3.0 
+line-size = 3
+line-color = #000000
+
+border-size = 1
+;border-left-size = 25
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = ${Dracula.doom_red}
+
+padding-left = 4
+padding-right = 4
+
+module-margin-left = 3
+module-margin-right = 3
+
+font-0 = "FiraCodeNerdFont-Bold:style=Bold:size=9;2"
+font-1 = "FiraCodeNerdFont-Bold:style=Bold:size=5;3"
+font-2 = "FiraCodeNerdFont-Bold:style=Regular:pixelsize=8;1"
+font-3 = "FiraCodeNerdFont-Bold:style=Solid:pixelsize=8;1"
+font-4 = "FiraCodeNerdFont-Bold:pixelsize=8;1"
+
+modules-center = date
+separator =" | "
+
+
+#################################################################
+
+[bar/middley_2]
+;https://github.com/jaagr/polybar/wiki/Configuration
+
+;monitor = ${env:MONITOR}
+;monitor-fallback = HDMI1
+;monitor-strict = false
+override-redirect = true
+bottom = false
+fixed-center = true
+width = 25%
+height = 22
+offset-x = 50%
+;offset-y = 1%
+;position = top
+;layer = top
+
+background = ${Dracula.background}
+foreground = ${Dracula.foreground}
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+;background-0 =
+
+radius = 9.0 
+line-size = 3
+line-color = #000000
+
+border-size = 4
+;border-left-size = 25
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = ${Dracula.doom_green}
+
+padding-left = 4
+padding-right = 4
+
+module-margin-left = 3
+module-margin-right = 3
+
+font-0 = "FiraCodeNerdFont-Bold:style=Bold:size=9;2"
+font-1 = "FiraCodeNerdFont-Bold:style=Bold:size=5;3"
+font-2 = "FiraCodeNerdFont-Bold:style=Regular:pixelsize=8;1"
+font-3 = "FiraCodeNerdFont-Bold:style=Solid:pixelsize=8;1"
+font-4 = "FiraCodeNerdFont-Bold:pixelsize=8;1"
+
+modules-center = memory2 cpu2 
+;separator =
+
+#################################################################
+
+[bar/righty]
+;https://github.com/jaagr/polybar/wiki/Configuration
+
+;monitor = ${env:MONITOR}
+;monitor-fallback = HDMI1
+;monitor-strict = false
+override-redirect = true
+bottom = false
+fixed-center = true
+width = 25%
+height = 22
+offset-x = 75%
+;offset-y = 1%
+;position = top
+;layer = top
+
+background = ${Dracula.background}
+foreground = ${Dracula.foreground}
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+;background-0 =
+
+radius = 9.0 
+line-size = 3
+line-color = #000000
+
+border-size = 4
+;border-left-size = 25
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = ${Dracula.doom_blue}
+
+padding-left = 4
+padding-right = 4
+
+module-margin-left = 3
+module-margin-right = 3
+
+font-0 = "FiraCodeNerdFont-Bold:style=Bold:size=9;2"
+font-1 = "FiraCodeNerdFont-Bold:style=Bold:size=5;3"
+font-2 = "FiraCodeNerdFont-Bold:style=Regular:pixelsize=8;1"
+font-3 = "FiraCodeNerdFont-Bold:style=Solid:pixelsize=8;1"
+font-4 = "FiraCodeNerdFont-Bold:pixelsize=8;1"
+
+modules-center = volume battery 
+;separator =
+
+
+###############################################################################
+############                       MODULE I3                        ############
+################################################################################
+[module/i4]
+type = internal/i3
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+fuzzy-match = false
+
+; Workspace icons — assign only 4
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-default = ""
+
+; Only show the icon
+label-focused = %icon%
+label-focused-padding = 1
+label-focused-foreground = ${colors.foreground}
+
+label-unfocused = %icon%
+label-unfocused-padding = 1
+label-unfocused-foreground = ${colors.foreground}
+
+label-visible = %icon%
+label-visible-padding = 1
+label-visible-foreground = ${colors.foreground}
+
+label-urgent = %icon%
+label-urgent-padding = 1
+label-urgent-foreground = #db104e
+
+format = <label-state>
+format-foreground = ${colors.foreground}
+
+[module/i3]
+;https://github.com/jaagr/polybar/wiki/Module:-i3
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+; Useful if you want to show monitor specific workspaces
+; on different bars. Default: false
+pin-workspaces = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = false
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = false
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = true
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+wrapping-scroll = false
+
+; Set the scroll cycle direction
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces
+; containing 'code' in the label
+; Default: false
+fuzzy-match = false
+
+;extra icons to choose from
+;http://fontawesome.io/cheatsheet/
+;       v     
+
+ws-icon-0 = 1; 
+ws-icon-1 = 2; 
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-default = " "
+
+; Available tags:
+;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+;   <label-mode> (default)
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-foreground = #000000
+label-mode-background = #FFBB00
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+; focused = Active workspace on focused monitor
+label-focused = %icon% %name%
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.foreground}
+;label-focused-underline = #FFFFFF
+label-focused-padding = 2
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon% %name%
+label-unfocused-padding = 2
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-underline =
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon% %name%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = 2
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+; urgent = Workspace with urgency hint set
+label-urgent = %icon% %name%
+label-urgent-background = ${self.label-focused-background}
+label-urgent-foreground = #db104e
+label-urgent-padding = 2
+
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+[module/backlight]
+;https://github.com/jaagr/polybar/wiki/Module:-backlight
+type = internal/backlight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <label>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+; Available tokens:
+;   %percentage% (default)
+label = %percentage%%
+
+; Only applies if <ramp> is used
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+
+; Only applies if <bar> is used
+bar-width = 10
+bar-indicator = |
+bar-fill = ─
+bar-empty = ─
+
+[module/battery]
+;https://github.com/jaagr/polybar/wiki/Module:-battery
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 100
+
+format-charging = <animation-charging> <label-charging>
+label-charging =  %percentage%%
+format-charging-foreground = #FFFFFF
+format-charging-background = ${colors.background}
+;format-chaging-underline = #a3c725
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging =  %percentage%%
+;format-discharging-underline = #c7ae25
+format-discharging-foreground = ${colors.foreground}
+format-discharging-background = ${colors.background}
+
+format-full-prefix = " "
+format-full-prefix-foreground = #FFFFFF
+;format-full-underline = #a3c725
+format-full-foreground = ${colors.foreground}
+format-full-background = ${colors.background}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = #FFFFFF
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = #FFFFFF
+animation-charging-framerate = 750
+
+
+[module/bluetooth]
+type = custom/script
+exec = ~/.config/polybar/scripts/bluetooth_status.sh
+interval = 5
+click-left = blueman-manager
+
+
+
+[module/memory2]
+type = internal/memory
+interval = 1
+format-prefix = "󰍛 "
+format-prefix-foreground = ${colors.color11}
+format-foreground = #FFFFFF
+;format-background = ${colors.cbg_poly}
+format-margin = 1
+format-padding = 0
+
+[module/ubuntu-button]
+type = custom/text
+content = ""
+;content-background = ${colors.cbg_poly}
+format-foreground = #FFFFFF
+
+label-font = 2
+interval = 1
+format-margin = 1
+format-padding = 0
+click-left = firefox &
+
+[module/gpu]
+type = custom/script
+exec = /home/gautam/gpu.sh
+interval = 1
+label-font = 1
+format-margin = 1
+format-padding = 0
+format-foreground = #FFFFFF
+;format-background = ${colors.cbg_poly}
+
+
+[module/cpu2]
+type = internal/cpu
+interval = 1
+format-prefix = "󰻠 "
+format-prefix-foreground = ${colors.color4}
+format-foreground = #FFFFFF
+;format-background = ${colors.cbg_poly}
+format-margin = 1
+format-padding = 0
+label-font = 1
+
+[module/date]
+;https://github.com/jaagr/polybar/wiki/Module:-date
+type = internal/date
+; Seconds to sleep between updates
+interval = 5
+; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+date = " %a %b %d, %Y"
+date-alt = " %a %b %d, %Y"
+time = %l:%M%p
+time-alt = %l:%M%p
+format-prefix = "📅 "
+format-prefix-foreground = ${colors.color4}
+;format-underline = ${colors.color4}
+format-margin = 2
+format-padding = 0
+label = "%date% %time% "
+;format-background = ${Dracula.color11} 
+format-foreground = #ffffff 
+radius = 6.0
+
+
+
+
+
+
+[module/ewmh]
+type = internal/xworkspaces
+
+pin-workspaces = true
+enable-click = true
+enable-scroll = false
+reverse-scroll = true
+
+;extra icons to choose from
+;http://fontawesome.io/cheatsheet/
+;       v     
+
+icon-0 = 1;
+icon-1 = 2;
+icon-2 = 3;
+icon-3 = 4;
+icon-4 = 5;
+icon-5 = 6;
+icon-6 = 7;
+icon-7 = 8;
+#icon-8 = 9;
+#icon-9 = 10;
+#icon-default = " "
+format = <label-state>
+label-monitor = %name%
+
+label-active = %name%
+label-active-foreground = ${colors.foreground}
+label-active-background = ${colors.background}
+label-active-padding = 1
+label-active-underline = ${colors.color5}
+label-active-margin = 2
+
+label-occupied = %name%
+label-occupied-background = ${colors.background}
+label-occupied-padding = 1
+label-occupied-underline = ${colors.color12}
+label-occupied-margin = 2
+
+label-urgent = %name%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.alert}
+label-urgent-underline = ${colors.alert}
+label-urgent-padding = 1
+label-urgent-margin = 2
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 1
+label-empty-margin = 2
+
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+[module/temperature1]
+;https://github.com/jaagr/polybar/wiki/Module:-temperature
+type = internal/temperature
+; Thermal zone to use
+; To list all the zone types, run
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+; Default: 0
+thermal-zone = 0
+
+; Full path of temperature sysfs path
+; Use `sensors` to find preferred temperature source, then run
+; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+; to find path to desired file
+; Default reverts to thermal zone setting
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+
+warn-temperature = 70
+format = <ramp> <label>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+;format-underline = #c72581
+format-warn = <ramp> <label-warn>
+format-warn-underline = #c7254f
+label = %temperature%
+label-warn =  %temperature%
+label-warn-foreground = #c7254f
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-foreground =${colors.foreground}
+
+[module/temperature2]
+type = custom/script
+exec = ~/.config/polybar/scripts/tempcores.sh
+interval = 2
+format-padding = 1
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+;format-underline = #C1B93E
+format-prefix-foreground = #C1B93E
+label =  %output:0:150:%
+[module/volume]
+;https://github.com/jaagr/polybar/wiki/Module:-volume
+type = internal/volume
+format-volume = "<label-volume>  <bar-volume>"
+
+label-volume = " "
+label-volume-foreground = #40ad4b
+label-muted = muted
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #40ad4b
+bar-volume-foreground-1 = #40ad4b
+bar-volume-foreground-2 = #40ad4b
+bar-volume-foreground-3 = #40ad4b
+bar-volume-foreground-4 = #40ad4b
+bar-volume-foreground-5 = #40ad4b
+bar-volume-foreground-6 = #40ad4b
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-indicator-font = 2
+bar-volume-fill = 
+bar-volume-fill-font = 2
+bar-volume-empty = 
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground}
+format-volume-foreground = ${colors.foreground}
+format-volume-background = ${colors.background}
+format-muted-prefix = "  "
+format-muted-prefix-foreground = "#ff0000"
+format-muted-foreground = ${colors.foreground}
+format-muted-background = ${colors.background}
+
+[module/xwindow]
+;https://github.com/jaagr/polybar/wiki/Module:-xwindow
+type = internal/xwindow
+
+; Available tokens:
+;   %title%
+; Default: %title%
+label = %title%
+label-maxlen = 50
+
+format-prefix = "*  "
+format-suffix = "  *"
+format-foreground = ${colors.color10}
+
+format-background = ${colors.background}
+format-margin = 2
+format-padding = 0
+
+##### For vim utrue# vim:ft=dosini
+
+
+
+

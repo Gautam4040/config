@@ -1,0 +1,33 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/0" value="true" />
+        <entry key="$USER_HOME$/Downloads/Archive 2" value="true" />
+        <entry key="$USER_HOME$/Downloads/a-copy-new" value="true" />
+        <entry key="$USER_HOME$/Downloads/archive(2)/photos" value="true" />
+        <entry key="$USER_HOME$/Downloads/archive(2)/sketches" value="true" />
+        <entry key="$USER_HOME$/Downloads/face2comics_4" value="true" />
+        <entry key="$USER_HOME$/PyCharmMiscProject" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/CAPSTONE" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/CARICARI" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/NOVEL" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject1" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject2" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject3" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject4" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject5" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/PythonProject6" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/full" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/full_2" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/kappi" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/unpaired" value="true" />
+        <entry key="$USER_HOME$/a-copy-new" value="true" />
+        <entry key="$USER_HOME$/cappy" value="true" />
+        <entry key="$USER_HOME$/downloads/archive(2)/sketches" value="true" />
+        <entry key="$USER_HOME$/temp" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

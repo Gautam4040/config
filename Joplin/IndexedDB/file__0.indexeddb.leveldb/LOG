@@ -1,0 +1,7 @@
+2025/05/30-17:14:42.501 2678 Reusing MANIFEST /home/gautam/.config/Joplin/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2025/05/30-17:14:42.501 2678 Recovering log #3
+2025/05/30-17:14:42.501 2678 Reusing old log /home/gautam/.config/Joplin/IndexedDB/file__0.indexeddb.leveldb/000003.log 
+2025/05/30-19:51:20.526 2679 Level-0 table #5: started
+2025/05/30-19:51:20.530 2679 Level-0 table #5: 1267 bytes OK
+2025/05/30-19:51:20.536 2679 Delete type=0 #3
+2025/05/30-19:51:20.536 2679 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
